@@ -1,0 +1,13 @@
+#!/usr/bin/python
+
+from PIL import Image
+
+from pytesseract import image_to_string
+
+img = Image.open('image_path')
+
+text = image_to_string(img)
+print text
+
+
+"'here before running this code please ensure that you have PIL and pytesseract"'
